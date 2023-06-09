@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Montserrat', 'Fraunces';
+    font-display: swap;
+    font-weight: 100 700;
+    src: url('https: //fonts.google.com/specimen/Montserrat'), ('https: //fonts.google.com/specimen/Fraunces');
+}
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark : hsl(212, 21%, 14%);
+    --Dark-grayish : hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%)
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+svg, img {
+    width: 100%;
+}
+body {
+    font-family: 'Montserat', 'Fraunces';
+    font-style: 14px;
+    font-weight: 100;
+    background-color: var(--Cream);
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--White);
+    border-radius: .5rem;
+    overflow: hidden;
+    gap: 2em;
+    width: 600px;
+    margin: auto auto;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    color: var(--Dark-grayish);
+}
+
+.title {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--Very-dark);
+}
+.description-info p {
+    line-height: 1.5;
+    font-size: 1rem;
+    color: var(--Dark-grayish);
+    /* margin: 0; */
+}
+
+.description-info span {
+    font-size: 2rem;
+    color: var(--Dark-cyan);
+    font-weight: 500;
+    font-style: var(--Dark-cyan);
+}
+.description-info span sup {
+    color: var(--Dark-grayish);
+    text-decoration: line-through;
+    margin-left: 2rem;
+}
+.btn img {
+    width: 10px;
+    height: 10px;
+}
+.btn {
+    width: 250px;
+    padding: 1rem;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    outline: none;
+    border: none;
+    border-radius: .5em;
+}
+
+  
