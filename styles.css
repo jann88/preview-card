@@ -65,7 +65,11 @@ body {
 .description {
     padding: var(--content-padding);
     display: grid;
+  
     /* gap: var(--content-spacing); */
+}
+.description-info{
+    color: var(--Dark-grayish);
 }
 .heading {
     text-transform: uppercase;
