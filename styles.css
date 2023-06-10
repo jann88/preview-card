@@ -42,7 +42,7 @@ body {
     place-content: center;
     line-height: 1.7rem;
     margin: 1rem;
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
 .card-container {
      --content-padding: 1.5rem;
@@ -51,11 +51,15 @@ body {
     border-radius: .5em;
     overflow: hidden;
     display: grid;
+    max-width: 600px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     .card-container{
         grid-template-columns: 1fr 1fr;
+    }
+    .image {
+        object-fit: cover;
     }
 }
 .description {
